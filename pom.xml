@@ -32,6 +32,7 @@
             <artifactId>mysql-connector-j</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -50,15 +51,16 @@
             <version>2.1.0</version>
         </dependency>
 
-    </dependencies>
 
+    </dependencies>
     <distributionManagement>
         <repository>
-            <id>TpFoyer</id>
+            <id>tp-foyer</id>
             <name>Nexus Repository</name>
             <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
+
 
     <build>
         <plugins>
