@@ -14,7 +14,7 @@ services:
   app-timesheet:
     depends_on:
       - mysqldb
-    image: chaima/TPFoyer:1.0.0
+    image: chaima/TPFoyer-image:1.0.0
     #build : ./
     restart: on-failure
     ports:
