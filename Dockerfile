@@ -1,8 +1,10 @@
 FROM openjdk:17-jdk-slim
+
 WORKDIR /app
-COPY target/tp-foyer-5.0.0.jar app.jar
-EXPOSE 8089
-ENTRYPOINT ["java", "-jar", "app.jar"]
+
+COPY target/tpfoyer-0.0.1-SNAPSHOT.jar app.jar
 COPY wait-for-it.sh /wait-for-it.sh
+
 RUN chmod +x /wait-for-it.sh
 
+ENTRYPOINT ["/wait-for-it.sh", "mysqldb:3306", "--", "java", "-jar", "app.jar"]
