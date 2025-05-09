@@ -54,6 +54,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Hibernate Validator Dependency -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.4.Final</version> <!-- Or the latest version -->
+        </dependency>
+
     </dependencies>
 
     <distributionManagement>
